@@ -1,0 +1,36 @@
+/* AppCustom.css */
+
+/* Aseguramos que el contenedor general mantenga el fondo oscuro deseado */
+.min-h-screen.bg-gray-800 {
+  min-height: 120vh !important; /* Aumentamos la altura mínima */
+  background-color: #1f2937 !important;
+}
+
+/* Ajustamos la barra de navegación (nav) */
+nav.bg-gray-700 {
+  background-color: #374151 !important;
+  padding: 1.5rem !important; /* Un poco más de padding para darle elegancia */
+  display: flex;
+  justify-content: center;
+  gap: 2rem !important; /* Aumenta la separación entre los enlaces */
+}
+
+/* Estilos para los enlaces dentro del nav */
+nav.bg-gray-700 a {
+  background-color: #ffffff !important; /* Fondo blanco */
+  color: #000000 !important;            /* Texto negro */
+  padding: 0.5rem 1rem !important;       /* Espaciado interno */
+  border-radius: 0.375rem !important;     /* Bordes redondeados */
+  font-weight: 600 !important;           /* Seminegrita */
+  text-decoration: none !important;      /* Quitar subrayado */
+  transition: background-color 0.2s ease-in-out !important;
+}
+
+/* Efecto hover: cambia a un gris muy claro */
+nav.bg-gray-700 a:hover {
+  background-color: #f0f0f0 !important;
+}
+.p-4.text-center h1 {
+  color: #ffffff !important;
+  text-align: center !important; /* Se asegura de que el texto esté centrado */
+}
