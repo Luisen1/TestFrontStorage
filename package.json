@@ -1,0 +1,23 @@
+{
+  "name": "testfrontstorage",
+  "version": "1.0.0",
+  "description": "testFront",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lucide-react": "^0.484.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "testfrontstorage": "file:"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "typescript": "^5.8.2"
+  }
+}
