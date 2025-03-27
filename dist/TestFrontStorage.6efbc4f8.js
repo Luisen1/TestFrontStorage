@@ -18601,7 +18601,6 @@ var prevRefreshSig = globalThis.$RefreshSig$;
 $parcel$ReactRefreshHelpers$161e.prelude(module);
 
 try {
-// src/App.tsx
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
@@ -18612,6 +18611,8 @@ var _imagesPage = require("./ImagesPage");
 var _imagesPageDefault = parcelHelpers.interopDefault(_imagesPage);
 var _imageSearchByLabel = require("./ImageSearchByLabel");
 var _imageSearchByLabelDefault = parcelHelpers.interopDefault(_imageSearchByLabel);
+var _createBucket = require("./CreateBucket");
+var _createBucketDefault = parcelHelpers.interopDefault(_createBucket);
 const Home = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "p-4 text-center",
         children: [
@@ -18669,6 +18670,15 @@ const App = ()=>{
                         fileName: "src/App.tsx",
                         lineNumber: 20,
                         columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/create-bucket",
+                        className: "text-blue-600 hover:underline",
+                        children: "Crear Bucket"
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 21,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
@@ -18682,20 +18692,8 @@ const App = ()=>{
                         path: "/",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Home, {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 23,
-                            columnNumber: 34
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.tsx",
-                        lineNumber: 23,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/images",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imagesPageDefault.default), {}, void 0, false, {
-                            fileName: "src/App.tsx",
                             lineNumber: 24,
-                            columnNumber: 40
+                            columnNumber: 34
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18703,8 +18701,8 @@ const App = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/search",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageSearchByLabelDefault.default), {}, void 0, false, {
+                        path: "/images",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imagesPageDefault.default), {}, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 25,
                             columnNumber: 40
@@ -18713,11 +18711,35 @@ const App = ()=>{
                         fileName: "src/App.tsx",
                         lineNumber: 25,
                         columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/search",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageSearchByLabelDefault.default), {}, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 26,
+                            columnNumber: 40
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 26,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/create-bucket",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createBucketDefault.default), {}, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 27,
+                            columnNumber: 47
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 27,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.tsx",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined)
         ]
@@ -18738,7 +18760,7 @@ $RefreshReg$(_c1, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","./ImagesPage":"bghvX","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./ImageSearchByLabel":"8IbmW"}],"61z4w":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","./ImagesPage":"bghvX","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./ImageSearchByLabel":"8IbmW","./CreateBucket":"bVm2s"}],"61z4w":[function(require,module,exports,__globalThis) {
 /**
  * React Router DOM v6.8.1
  *
@@ -33040,6 +33062,130 @@ var _c;
 $RefreshReg$(_c, "ImageSearchByLabel");
 
   $parcel$ReactRefreshHelpers$69fe.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"bVm2s":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$68bb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$68bb.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$68bb.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const CreateBucket = ()=>{
+    _s();
+    const [bucketName, setBucketName] = (0, _react.useState)('');
+    const [loading, setLoading] = (0, _react.useState)(false);
+    const [successMessage, setSuccessMessage] = (0, _react.useState)(null);
+    const [errorMessage, setErrorMessage] = (0, _react.useState)(null);
+    const handleCreateBucket = async ()=>{
+        // Evita enviar petición si el nombre está vacío
+        if (!bucketName.trim()) return;
+        setLoading(true);
+        setSuccessMessage(null);
+        setErrorMessage(null);
+        try {
+            // Petición POST al endpoint
+            const response = await fetch('http://localhost:3030/api/bucket/create', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: bucketName
+                })
+            });
+            if (!response.ok) throw new Error('Error al crear el bucket');
+            // Si llega aquí, el bucket se creó correctamente
+            const data = await response.json();
+            console.log('Respuesta al crear bucket:', data);
+            setSuccessMessage("\xa1Bucket creado con \xe9xito!");
+            setBucketName(''); // Limpia el input
+        } catch (error) {
+            setErrorMessage(error.message || 'Error desconocido');
+        } finally{
+            setLoading(false);
+        }
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "p-4 max-w-md mx-auto",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "text-2xl font-bold mb-4 text-center",
+                children: "Crear Nuevo Bucket"
+            }, void 0, false, {
+                fileName: "src/CreateBucket.tsx",
+                lineNumber: 46,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex flex-col space-y-4",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        value: bucketName,
+                        onChange: (e)=>setBucketName(e.target.value),
+                        placeholder: "Ingrese el nombre del bucket",
+                        className: "border border-gray-300 p-2 rounded"
+                    }, void 0, false, {
+                        fileName: "src/CreateBucket.tsx",
+                        lineNumber: 48,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: handleCreateBucket,
+                        disabled: loading,
+                        className: "bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 disabled:opacity-50",
+                        children: loading ? 'Creando...' : 'Crear Bucket'
+                    }, void 0, false, {
+                        fileName: "src/CreateBucket.tsx",
+                        lineNumber: 55,
+                        columnNumber: 9
+                    }, undefined),
+                    successMessage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "text-green-600 text-center",
+                        children: successMessage
+                    }, void 0, false, {
+                        fileName: "src/CreateBucket.tsx",
+                        lineNumber: 64,
+                        columnNumber: 11
+                    }, undefined),
+                    errorMessage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "text-red-600 text-center",
+                        children: errorMessage
+                    }, void 0, false, {
+                        fileName: "src/CreateBucket.tsx",
+                        lineNumber: 67,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/CreateBucket.tsx",
+                lineNumber: 47,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/CreateBucket.tsx",
+        lineNumber: 45,
+        columnNumber: 5
+    }, undefined);
+};
+_s(CreateBucket, "TpcoN0ZC4qXeD0KwMrz8kK1/AMg=");
+_c = CreateBucket;
+exports.default = CreateBucket;
+var _c;
+$RefreshReg$(_c, "CreateBucket");
+
+  $parcel$ReactRefreshHelpers$68bb.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
