@@ -18604,6 +18604,8 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _indexCss = require("./index.css"); // Estilos de Tailwind
+var _appCustomCss = require("./AppCustom.css");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
@@ -18615,137 +18617,135 @@ var _createBucket = require("./CreateBucket");
 var _createBucketDefault = parcelHelpers.interopDefault(_createBucket);
 const Home = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "p-4 text-center",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "text-4xl font-bold mb-4",
-                children: "Bienvenido a TestFrontStorage"
-            }, void 0, false, {
-                fileName: "src/App.tsx",
-                lineNumber: 9,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Utiliza la navegaci\xf3n para acceder a las funcionalidades."
-            }, void 0, false, {
-                fileName: "src/App.tsx",
-                lineNumber: 10,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            className: "text-4xl font-bold mb-4 text-white",
+            children: "Bienvenidos"
+        }, void 0, false, {
+            fileName: "src/App.tsx",
+            lineNumber: 12,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/App.tsx",
-        lineNumber: 8,
+        lineNumber: 11,
         columnNumber: 3
     }, undefined);
 _c = Home;
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-                className: "bg-gray-200 p-4 flex justify-center gap-4",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/",
-                        className: "text-blue-600 hover:underline",
-                        children: "Inicio"
-                    }, void 0, false, {
-                        fileName: "src/App.tsx",
-                        lineNumber: 18,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/images",
-                        className: "text-blue-600 hover:underline",
-                        children: "Im\xe1genes"
-                    }, void 0, false, {
-                        fileName: "src/App.tsx",
-                        lineNumber: 19,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/search",
-                        className: "text-blue-600 hover:underline",
-                        children: "Buscar por Etiqueta"
-                    }, void 0, false, {
-                        fileName: "src/App.tsx",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/create-bucket",
-                        className: "text-blue-600 hover:underline",
-                        children: "Crear Bucket"
-                    }, void 0, false, {
-                        fileName: "src/App.tsx",
-                        lineNumber: 21,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/App.tsx",
-                lineNumber: 17,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Home, {}, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "min-h-screen bg-gray-800",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                    className: "bg-gray-700 p-4 flex justify-center gap-4",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/",
+                            className: "text-white hover:underline",
+                            children: "Inicio"
+                        }, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 21,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/images",
+                            className: "text-white hover:underline",
+                            children: "Im\xe1genes"
+                        }, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 22,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/search",
+                            className: "text-white hover:underline",
+                            children: "Buscar por Etiqueta"
+                        }, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 23,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/create-bucket",
+                            className: "text-white hover:underline",
+                            children: "Crear Bucket"
+                        }, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 24,
-                            columnNumber: 34
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.tsx",
-                        lineNumber: 24,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/images",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imagesPageDefault.default), {}, void 0, false, {
-                            fileName: "src/App.tsx",
-                            lineNumber: 25,
-                            columnNumber: 40
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.tsx",
-                        lineNumber: 25,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/search",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageSearchByLabelDefault.default), {}, void 0, false, {
-                            fileName: "src/App.tsx",
-                            lineNumber: 26,
-                            columnNumber: 40
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.tsx",
-                        lineNumber: 26,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        path: "/create-bucket",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createBucketDefault.default), {}, void 0, false, {
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/App.tsx",
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Home, {}, void 0, false, {
+                                fileName: "src/App.tsx",
+                                lineNumber: 27,
+                                columnNumber: 36
+                            }, void 0)
+                        }, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 27,
-                            columnNumber: 47
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.tsx",
-                        lineNumber: 27,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/App.tsx",
-                lineNumber: 23,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/images",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imagesPageDefault.default), {}, void 0, false, {
+                                fileName: "src/App.tsx",
+                                lineNumber: 28,
+                                columnNumber: 42
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 28,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/search",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageSearchByLabelDefault.default), {}, void 0, false, {
+                                fileName: "src/App.tsx",
+                                lineNumber: 29,
+                                columnNumber: 42
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 29,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/create-bucket",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createBucketDefault.default), {}, void 0, false, {
+                                fileName: "src/App.tsx",
+                                lineNumber: 30,
+                                columnNumber: 49
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 30,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/App.tsx",
+                    lineNumber: 26,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/App.tsx",
+            lineNumber: 19,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/App.tsx",
-        lineNumber: 16,
+        lineNumber: 18,
         columnNumber: 5
     }, undefined);
 };
@@ -18760,7 +18760,7 @@ $RefreshReg$(_c1, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","./ImagesPage":"bghvX","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./ImageSearchByLabel":"8IbmW","./CreateBucket":"bVm2s"}],"61z4w":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","./ImagesPage":"bghvX","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./ImageSearchByLabel":"8IbmW","./CreateBucket":"bVm2s","./AppCustom.css":"a0D1p"}],"61z4w":[function(require,module,exports,__globalThis) {
 /**
  * React Router DOM v6.8.1
  *
@@ -23763,26 +23763,35 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _imageUploader = require("./components/ImageUploader");
 var _imageUploaderDefault = parcelHelpers.interopDefault(_imageUploader);
+var _imagesPageCss = require("./ImagesPage.css");
 const ImagesPage = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "text-3xl font-bold text-center my-4",
-                children: "Galer\xeda de Im\xe1genes"
-            }, void 0, false, {
-                fileName: "src/ImagesPage.tsx",
-                lineNumber: 7,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageUploaderDefault.default), {}, void 0, false, {
-                fileName: "src/ImagesPage.tsx",
-                lineNumber: 8,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
+        className: "images-page-container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "images-page-box",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: "images-page-title text-3xl font-bold my-4",
+                    children: "Galer\xeda de Im\xe1genes"
+                }, void 0, false, {
+                    fileName: "src/ImagesPage.tsx",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageUploaderDefault.default), {}, void 0, false, {
+                    fileName: "src/ImagesPage.tsx",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/ImagesPage.tsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/ImagesPage.tsx",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 5
     }, undefined);
 };
@@ -23796,7 +23805,7 @@ $RefreshReg$(_c, "ImagesPage");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./components/ImageUploader":"7PP3x","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"7PP3x":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./components/ImageUploader":"7PP3x","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./ImagesPage.css":"cR6hB"}],"7PP3x":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$9813 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$9813.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -23814,28 +23823,10 @@ var _fileUtils = require("../utils/fileUtils");
 var _s = $RefreshSig$();
 const ImageUploader = ()=>{
     _s();
-    // Estados para subir imagen
     const [selectedFile, setSelectedFile] = (0, _react.useState)(null);
     const [previewImage, setPreviewImage] = (0, _react.useState)(null);
     const [uploadStatus, setUploadStatus] = (0, _react.useState)(null);
     const [uploadedImages, setUploadedImages] = (0, _react.useState)([]);
-    // Estado para imágenes del servidor
-    const [serverImages, setServerImages] = (0, _react.useState)([]);
-    // Al montar el componente se consumen las imágenes del endpoint
-    (0, _react.useEffect)(()=>{
-        const fetchImages = async ()=>{
-            try {
-                const response = await fetch('http://localhost:3030/api/images');
-                if (!response.ok) throw new Error("Error al obtener im\xe1genes");
-                const data = await response.json();
-                // Asumiendo que el JSON devuelto es: { success: true, data: { images: [...] } }
-                setServerImages(data.data.images);
-            } catch (error) {
-                console.error("Error al obtener im\xe1genes:", error);
-            }
-        };
-        fetchImages();
-    }, []);
     const handleFileSelect = (event)=>{
         const file = event.target.files?.[0];
         if (file) {
@@ -23858,7 +23849,7 @@ const ImageUploader = ()=>{
         if (selectedFile) try {
             const formData = new FormData();
             formData.append('image', selectedFile);
-            const response = await fetch('http://localhost:3030/api/process-image', {
+            const response = await fetch('http://localhost:3030/api/images/process', {
                 method: 'POST',
                 body: formData
             });
@@ -23866,7 +23857,7 @@ const ImageUploader = ()=>{
                 const errorText = await response.text();
                 throw new Error(errorText || 'Error en la solicitud');
             }
-            const result = await response.json();
+            await response.json();
             setUploadStatus({
                 type: 'success',
                 message: 'Imagen subida exitosamente y procesada'
@@ -23898,157 +23889,158 @@ const ImageUploader = ()=>{
         const fileInput = document.getElementById('fileInput');
         if (fileInput) fileInput.value = '';
     };
-    // Función para descargar la imagen
-    const handleDownload = (image)=>{
-        const link = document.createElement('a');
-        link.href = image.url;
-        link.download = image.file_name;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
-    // Función para borrar la imagen consumiendo el endpoint correspondiente
-    const handleDelete = async (image)=>{
-        try {
-            const response = await fetch(`http://localhost:3030/api/images/id/${image.id}`, {
-                method: 'DELETE'
-            });
-            if (!response.ok) throw new Error('No se pudo borrar la imagen');
-            // Actualiza el estado eliminando la imagen borrada
-            setServerImages((prevImages)=>prevImages.filter((img)=>img.id !== image.id));
-        } catch (error) {
-            console.error('Error al borrar la imagen:', error);
-        }
-    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4",
+        className: "bg-gray-900 min-h-screen p-4 text-gray-100",
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "text-3xl font-bold text-center mb-6",
+                children: "Subir y Gestionar Im\xe1genes"
+            }, void 0, false, {
+                fileName: "src/components/ImageUploader.tsx",
+                lineNumber: 104,
+                columnNumber: 7
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "bg-white shadow-md rounded-lg p-6 w-full max-w-md",
+                className: "max-w-md mx-auto bg-gray-800 p-6 rounded-lg shadow-md",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        className: "text-2xl font-bold mb-4 text-center",
+                        className: "text-2xl font-semibold mb-4",
                         children: "Subir Imagen"
                     }, void 0, false, {
                         fileName: "src/components/ImageUploader.tsx",
-                        lineNumber: 155,
+                        lineNumber: 107,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "file",
-                        id: "fileInput",
-                        accept: "image/*",
-                        onChange: handleFileSelect,
-                        className: "hidden"
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mb-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "fileInput",
+                                className: "inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded cursor-pointer transition-colors",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Upload), {
+                                        className: "mr-2"
+                                    }, void 0, false, {
+                                        fileName: "src/components/ImageUploader.tsx",
+                                        lineNumber: 115,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    "Seleccionar archivo"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/ImageUploader.tsx",
+                                lineNumber: 111,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "file",
+                                id: "fileInput",
+                                accept: "image/*",
+                                onChange: handleFileSelect,
+                                className: "hidden"
+                            }, void 0, false, {
+                                fileName: "src/components/ImageUploader.tsx",
+                                lineNumber: 118,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "ml-3",
+                                children: selectedFile ? selectedFile.name : 'Sin archivos seleccionados'
+                            }, void 0, false, {
+                                fileName: "src/components/ImageUploader.tsx",
+                                lineNumber: 126,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/ImageUploader.tsx",
-                        lineNumber: 157,
+                        lineNumber: 110,
                         columnNumber: 9
                     }, undefined),
                     previewImage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mb-4 relative",
+                        className: "mb-4",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: previewImage,
                             alt: "Vista previa",
-                            className: "max-w-full max-h-64 mx-auto rounded-lg object-contain"
+                            className: "max-w-full max-h-64 rounded object-contain"
                         }, void 0, false, {
                             fileName: "src/components/ImageUploader.tsx",
-                            lineNumber: 167,
+                            lineNumber: 134,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/ImageUploader.tsx",
-                        lineNumber: 166,
+                        lineNumber: 133,
                         columnNumber: 11
                     }, undefined),
                     uploadStatus && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: `
-              mb-4 p-3 rounded-lg text-center flex items-center justify-center
-              ${uploadStatus.type === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}
-            `,
+                        className: `mb-4 p-3 rounded-lg text-center flex items-center justify-center
+              ${uploadStatus.type === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`,
                         children: [
                             uploadStatus.type === 'success' ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.FileCheck2), {
                                 className: "mr-2"
                             }, void 0, false, {
                                 fileName: "src/components/ImageUploader.tsx",
-                                lineNumber: 185,
+                                lineNumber: 153,
                                 columnNumber: 15
                             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.FileX2), {
                                 className: "mr-2"
                             }, void 0, false, {
                                 fileName: "src/components/ImageUploader.tsx",
-                                lineNumber: 187,
+                                lineNumber: 155,
                                 columnNumber: 15
                             }, undefined),
                             uploadStatus.message
                         ]
                     }, void 0, true, {
                         fileName: "src/components/ImageUploader.tsx",
-                        lineNumber: 176,
+                        lineNumber: 144,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex justify-between space-x-4",
+                        className: "flex space-x-4",
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "fileInput",
-                                className: "flex-1 bg-blue-500 text-white py-2 px-4 rounded-lg   hover:bg-blue-600 transition duration-300   flex items-center justify-center cursor-pointer",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Upload), {
-                                        className: "mr-2"
-                                    }, void 0, false, {
-                                        fileName: "src/components/ImageUploader.tsx",
-                                        lineNumber: 200,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    "Seleccionar Imagen"
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/ImageUploader.tsx",
-                                lineNumber: 194,
-                                columnNumber: 11
-                            }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 onClick: handleUpload,
                                 disabled: !selectedFile || uploadStatus?.type === 'success',
-                                className: "flex-1 bg-green-500 text-white py-2 px-4 rounded-lg   hover:bg-green-600 transition duration-300   flex items-center justify-center   disabled:opacity-50 disabled:cursor-not-allowed",
+                                className: "flex-1 bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded disabled:opacity-50 transition-colors",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Upload), {
-                                        className: "mr-2"
+                                        className: "inline-block mr-1"
                                     }, void 0, false, {
                                         fileName: "src/components/ImageUploader.tsx",
-                                        lineNumber: 212,
+                                        lineNumber: 168,
                                         columnNumber: 13
                                     }, undefined),
                                     "Subir"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/ImageUploader.tsx",
-                                lineNumber: 204,
+                                lineNumber: 163,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 onClick: handleGoBack,
-                                className: "flex-1 bg-red-500 text-white py-2 px-4 rounded-lg   hover:bg-red-600 transition duration-300   flex items-center justify-center   disabled:opacity-50 disabled:cursor-not-allowed",
+                                className: "flex-1 bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded transition-colors",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ArrowLeft), {
-                                        className: "mr-2"
+                                        className: "inline-block mr-1"
                                     }, void 0, false, {
                                         fileName: "src/components/ImageUploader.tsx",
-                                        lineNumber: 223,
+                                        lineNumber: 175,
                                         columnNumber: 13
                                     }, undefined),
                                     "Atr\xe1s"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/ImageUploader.tsx",
-                                lineNumber: 216,
+                                lineNumber: 171,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/ImageUploader.tsx",
-                        lineNumber: 193,
+                        lineNumber: 162,
                         columnNumber: 9
                     }, undefined),
                     uploadedImages.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -24056,10 +24048,10 @@ const ImageUploader = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                 className: "text-lg font-bold mb-2",
-                                children: "Im\xe1genes Subidas (localmente):"
+                                children: "Im\xe1genes Subidas:"
                             }, void 0, false, {
                                 fileName: "src/components/ImageUploader.tsx",
-                                lineNumber: 230,
+                                lineNumber: 183,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -24068,125 +24060,34 @@ const ImageUploader = ()=>{
                                         children: imageName
                                     }, index, false, {
                                         fileName: "src/components/ImageUploader.tsx",
-                                        lineNumber: 233,
+                                        lineNumber: 186,
                                         columnNumber: 17
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/components/ImageUploader.tsx",
-                                lineNumber: 231,
+                                lineNumber: 184,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/ImageUploader.tsx",
-                        lineNumber: 229,
+                        lineNumber: 182,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/ImageUploader.tsx",
-                lineNumber: 154,
+                lineNumber: 106,
                 columnNumber: 7
-            }, undefined),
-            serverImages.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "mt-8 w-full max-w-4xl",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        className: "text-2xl font-bold mb-4 text-center",
-                        children: "Im\xe1genes del Servidor"
-                    }, void 0, false, {
-                        fileName: "src/components/ImageUploader.tsx",
-                        lineNumber: 242,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4",
-                        children: serverImages.map((img)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "bg-white shadow rounded-lg p-4 flex flex-col items-center",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: img.url,
-                                        alt: img.file_name,
-                                        className: "w-full h-auto max-h-40 object-contain mb-2"
-                                    }, void 0, false, {
-                                        fileName: "src/components/ImageUploader.tsx",
-                                        lineNumber: 249,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "text-gray-700 text-sm",
-                                        children: [
-                                            "ID: ",
-                                            img.id
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/ImageUploader.tsx",
-                                        lineNumber: 254,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "text-gray-700 text-sm truncate",
-                                        children: [
-                                            "URL: ",
-                                            img.url
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/ImageUploader.tsx",
-                                        lineNumber: 255,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "flex space-x-2 mt-2",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                onClick: ()=>handleDownload(img),
-                                                className: "bg-blue-500 hover:bg-blue-600 text-white py-1 px-2 rounded text-xs",
-                                                children: "Descargar"
-                                            }, void 0, false, {
-                                                fileName: "src/components/ImageUploader.tsx",
-                                                lineNumber: 257,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                onClick: ()=>handleDelete(img),
-                                                className: "bg-red-500 hover:bg-red-600 text-white py-1 px-2 rounded text-xs",
-                                                children: "Borrar"
-                                            }, void 0, false, {
-                                                fileName: "src/components/ImageUploader.tsx",
-                                                lineNumber: 263,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/ImageUploader.tsx",
-                                        lineNumber: 256,
-                                        columnNumber: 17
-                                    }, undefined)
-                                ]
-                            }, img.id, true, {
-                                fileName: "src/components/ImageUploader.tsx",
-                                lineNumber: 245,
-                                columnNumber: 15
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/components/ImageUploader.tsx",
-                        lineNumber: 243,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/ImageUploader.tsx",
-                lineNumber: 241,
-                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/ImageUploader.tsx",
-        lineNumber: 153,
+        lineNumber: 99,
         columnNumber: 5
     }, undefined);
 };
-_s(ImageUploader, "SjRPvS9Dg1t7SZFoPfDDGWKy/88=");
+_s(ImageUploader, "JgC7Z9ApbMtMcCf9LvsepT+3tMQ=");
 _c = ImageUploader;
 exports.default = ImageUploader;
 var _c;
@@ -32907,7 +32808,7 @@ const listUploadedImages = (images)=>{
     return Array.from(new Set(images));
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8IbmW":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cR6hB":[function() {},{}],"8IbmW":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$69fe = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$69fe.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -32915,11 +32816,13 @@ var prevRefreshSig = globalThis.$RefreshSig$;
 $parcel$ReactRefreshHelpers$69fe.prelude(module);
 
 try {
+// src/ImageSearchByLabel.tsx
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _imageSearchByLabelCss = require("./ImageSearchByLabel.css");
 var _s = $RefreshSig$();
 const ImageSearchByLabel = ()=>{
     _s();
@@ -32932,13 +32835,10 @@ const ImageSearchByLabel = ()=>{
         setLoading(true);
         setError(null);
         try {
-            const response = await fetch(`http://localhost:3030/api/images/by-label?tag=${encodeURIComponent(searchTag)}`, {
-                method: 'GET'
-            });
+            const response = await fetch(`http://localhost:3030/api/images/by-label?tag=${encodeURIComponent(searchTag)}`);
             if (!response.ok) throw new Error("Error en la b\xfasqueda");
             const data = await response.json();
-            // El endpoint regresa { success: true, data: [...] }
-            setResults(data.data); // <--- Aquí el cambio: usar data.data en lugar de data.data.images
+            setResults(data.data);
         } catch (err) {
             setError(err.message || 'Error desconocido');
         } finally{
@@ -32946,112 +32846,119 @@ const ImageSearchByLabel = ()=>{
         }
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "p-4 max-w-4xl mx-auto",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "text-2xl font-bold mb-4 text-center",
-                children: "Buscar Im\xe1genes por Etiqueta"
-            }, void 0, false, {
-                fileName: "src/ImageSearchByLabel.tsx",
-                lineNumber: 41,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex items-center mb-4",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        value: searchTag,
-                        onChange: (e)=>setSearchTag(e.target.value),
-                        placeholder: "Ingrese etiqueta...",
-                        className: "border border-gray-300 p-2 rounded flex-grow mr-2"
-                    }, void 0, false, {
-                        fileName: "src/ImageSearchByLabel.tsx",
-                        lineNumber: 43,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        onClick: handleSearch,
-                        className: "bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600",
-                        children: "Buscar"
-                    }, void 0, false, {
-                        fileName: "src/ImageSearchByLabel.tsx",
-                        lineNumber: 50,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/ImageSearchByLabel.tsx",
-                lineNumber: 42,
-                columnNumber: 7
-            }, undefined),
-            loading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-center",
-                children: "Buscando..."
-            }, void 0, false, {
-                fileName: "src/ImageSearchByLabel.tsx",
-                lineNumber: 57,
-                columnNumber: 19
-            }, undefined),
-            error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-center text-red-500",
-                children: error
-            }, void 0, false, {
-                fileName: "src/ImageSearchByLabel.tsx",
-                lineNumber: 58,
-                columnNumber: 17
-            }, undefined),
-            results.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4",
-                children: results.map((img)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "bg-white shadow rounded-lg p-4 flex flex-col items-center",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: img.url,
-                                alt: img.file_name,
-                                className: "w-full h-auto max-h-40 object-contain mb-2"
-                            }, void 0, false, {
-                                fileName: "src/ImageSearchByLabel.tsx",
-                                lineNumber: 66,
-                                columnNumber: 15
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "text-gray-700 text-sm",
-                                children: [
-                                    "ID: ",
-                                    img.id
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/ImageSearchByLabel.tsx",
-                                lineNumber: 71,
-                                columnNumber: 15
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "text-gray-700 text-sm truncate",
-                                children: [
-                                    "URL: ",
-                                    img.url
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/ImageSearchByLabel.tsx",
-                                lineNumber: 72,
-                                columnNumber: 15
-                            }, undefined)
-                        ]
-                    }, img.id, true, {
-                        fileName: "src/ImageSearchByLabel.tsx",
-                        lineNumber: 62,
-                        columnNumber: 13
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/ImageSearchByLabel.tsx",
-                lineNumber: 60,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
+        className: "image-search-container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "image-search-box",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-2xl font-bold mb-4 text-center",
+                    children: "Buscar Im\xe1genes por Etiqueta"
+                }, void 0, false, {
+                    fileName: "src/ImageSearchByLabel.tsx",
+                    lineNumber: 41,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex items-center mb-4",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            value: searchTag,
+                            onChange: (e)=>setSearchTag(e.target.value),
+                            placeholder: "Ingrese etiqueta...",
+                            className: "border border-gray-300 p-2 rounded flex-grow mr-2"
+                        }, void 0, false, {
+                            fileName: "src/ImageSearchByLabel.tsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: handleSearch,
+                            className: "bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600",
+                            children: "Buscar"
+                        }, void 0, false, {
+                            fileName: "src/ImageSearchByLabel.tsx",
+                            lineNumber: 50,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/ImageSearchByLabel.tsx",
+                    lineNumber: 42,
+                    columnNumber: 9
+                }, undefined),
+                loading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-center",
+                    children: "Buscando..."
+                }, void 0, false, {
+                    fileName: "src/ImageSearchByLabel.tsx",
+                    lineNumber: 57,
+                    columnNumber: 21
+                }, undefined),
+                error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-center text-red-500",
+                    children: error
+                }, void 0, false, {
+                    fileName: "src/ImageSearchByLabel.tsx",
+                    lineNumber: 58,
+                    columnNumber: 19
+                }, undefined),
+                results.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4",
+                    children: results.map((img)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "bg-white shadow rounded-lg p-4 flex flex-col items-center",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: img.url,
+                                    alt: img.file_name,
+                                    className: "w-full h-auto max-h-40 object-contain mb-2"
+                                }, void 0, false, {
+                                    fileName: "src/ImageSearchByLabel.tsx",
+                                    lineNumber: 66,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "text-gray-700 text-sm",
+                                    children: [
+                                        "ID: ",
+                                        img.id
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/ImageSearchByLabel.tsx",
+                                    lineNumber: 71,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "text-gray-700 text-sm truncate",
+                                    children: [
+                                        "URL: ",
+                                        img.url
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/ImageSearchByLabel.tsx",
+                                    lineNumber: 72,
+                                    columnNumber: 17
+                                }, undefined)
+                            ]
+                        }, img.id, true, {
+                            fileName: "src/ImageSearchByLabel.tsx",
+                            lineNumber: 62,
+                            columnNumber: 15
+                        }, undefined))
+                }, void 0, false, {
+                    fileName: "src/ImageSearchByLabel.tsx",
+                    lineNumber: 60,
+                    columnNumber: 11
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/ImageSearchByLabel.tsx",
+            lineNumber: 40,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/ImageSearchByLabel.tsx",
-        lineNumber: 40,
+        lineNumber: 39,
         columnNumber: 5
     }, undefined);
 };
@@ -33066,7 +32973,7 @@ $RefreshReg$(_c, "ImageSearchByLabel");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"bVm2s":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./ImageSearchByLabel.css":"efq4c"}],"efq4c":[function() {},{}],"bVm2s":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$68bb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$68bb.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -33079,6 +32986,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _createBucketCss = require("./CreateBucket.css");
 var _s = $RefreshSig$();
 const CreateBucket = ()=>{
     _s();
@@ -33087,13 +32995,11 @@ const CreateBucket = ()=>{
     const [successMessage, setSuccessMessage] = (0, _react.useState)(null);
     const [errorMessage, setErrorMessage] = (0, _react.useState)(null);
     const handleCreateBucket = async ()=>{
-        // Evita enviar petición si el nombre está vacío
         if (!bucketName.trim()) return;
         setLoading(true);
         setSuccessMessage(null);
         setErrorMessage(null);
         try {
-            // Petición POST al endpoint
             const response = await fetch('http://localhost:3030/api/bucket/create', {
                 method: 'POST',
                 headers: {
@@ -33104,11 +33010,10 @@ const CreateBucket = ()=>{
                 })
             });
             if (!response.ok) throw new Error('Error al crear el bucket');
-            // Si llega aquí, el bucket se creó correctamente
             const data = await response.json();
             console.log('Respuesta al crear bucket:', data);
             setSuccessMessage("\xa1Bucket creado con \xe9xito!");
-            setBucketName(''); // Limpia el input
+            setBucketName('');
         } catch (error) {
             setErrorMessage(error.message || 'Error desconocido');
         } finally{
@@ -33116,66 +33021,72 @@ const CreateBucket = ()=>{
         }
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "p-4 max-w-md mx-auto",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "text-2xl font-bold mb-4 text-center",
-                children: "Crear Nuevo Bucket"
-            }, void 0, false, {
-                fileName: "src/CreateBucket.tsx",
-                lineNumber: 46,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-col space-y-4",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        value: bucketName,
-                        onChange: (e)=>setBucketName(e.target.value),
-                        placeholder: "Ingrese el nombre del bucket",
-                        className: "border border-gray-300 p-2 rounded"
-                    }, void 0, false, {
-                        fileName: "src/CreateBucket.tsx",
-                        lineNumber: 48,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        onClick: handleCreateBucket,
-                        disabled: loading,
-                        className: "bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 disabled:opacity-50",
-                        children: loading ? 'Creando...' : 'Crear Bucket'
-                    }, void 0, false, {
-                        fileName: "src/CreateBucket.tsx",
-                        lineNumber: 55,
-                        columnNumber: 9
-                    }, undefined),
-                    successMessage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "text-green-600 text-center",
-                        children: successMessage
-                    }, void 0, false, {
-                        fileName: "src/CreateBucket.tsx",
-                        lineNumber: 64,
-                        columnNumber: 11
-                    }, undefined),
-                    errorMessage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "text-red-600 text-center",
-                        children: errorMessage
-                    }, void 0, false, {
-                        fileName: "src/CreateBucket.tsx",
-                        lineNumber: 67,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/CreateBucket.tsx",
-                lineNumber: 47,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
+        className: "create-bucket-container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "create-bucket-box",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: "Crear Nuevo Bucket"
+                }, void 0, false, {
+                    fileName: "src/CreateBucket.tsx",
+                    lineNumber: 44,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex flex-col space-y-4",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            value: bucketName,
+                            onChange: (e)=>setBucketName(e.target.value),
+                            placeholder: "Ingrese el nombre del bucket",
+                            className: "border border-gray-500 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-800 text-white placeholder-gray-400"
+                        }, void 0, false, {
+                            fileName: "src/CreateBucket.tsx",
+                            lineNumber: 46,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: handleCreateBucket,
+                            disabled: loading,
+                            className: "bg-green-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-600 disabled:opacity-50 transition-all",
+                            children: loading ? 'Creando...' : 'Crear Bucket'
+                        }, void 0, false, {
+                            fileName: "src/CreateBucket.tsx",
+                            lineNumber: 53,
+                            columnNumber: 11
+                        }, undefined),
+                        successMessage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-green-400 text-center font-medium",
+                            children: successMessage
+                        }, void 0, false, {
+                            fileName: "src/CreateBucket.tsx",
+                            lineNumber: 62,
+                            columnNumber: 13
+                        }, undefined),
+                        errorMessage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-red-400 text-center font-medium",
+                            children: errorMessage
+                        }, void 0, false, {
+                            fileName: "src/CreateBucket.tsx",
+                            lineNumber: 67,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/CreateBucket.tsx",
+                    lineNumber: 45,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/CreateBucket.tsx",
+            lineNumber: 43,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/CreateBucket.tsx",
-        lineNumber: 45,
+        lineNumber: 42,
         columnNumber: 5
     }, undefined);
 };
@@ -33190,6 +33101,6 @@ $RefreshReg$(_c, "CreateBucket");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["eYRZT","4dmnR"], "4dmnR", "parcelRequire1fdc", null, null, "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./CreateBucket.css":"7xAM0"}],"7xAM0":[function() {},{}],"a0D1p":[function() {},{}]},["eYRZT","4dmnR"], "4dmnR", "parcelRequire1fdc", null, null, "http://localhost:1234")
 
 //# sourceMappingURL=TestFrontStorage.6efbc4f8.js.map

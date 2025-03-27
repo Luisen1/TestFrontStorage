@@ -1,0 +1,30 @@
+/* ImageSearchByLabel.css */
+
+/* Contenedor general con fondo gris oscuro, con padding para separar el contenido de la parte superior */
+.image-search-container {
+    background-color: #1f2937; /* bg-gray-800 */
+    min-height: 100vh;
+    padding: 2rem 1rem; /* separación superior e inferior */
+  }
+  
+  /* Caja que contiene el formulario y los resultados, centrada horizontalmente */
+  .image-search-box {
+    background-color: #000; /* Fondo negro */
+    border: 1px solid #374151; /* Borde gris */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 1.5rem; /* p-6 */
+    max-width: 80%;
+    margin: 0 auto; /* Centrado horizontal */
+  }
+  
+  /* Títulos en blanco */
+  .image-search-box h2 {
+    color: #ffffff;
+  }
+  
+  /* Los párrafos dentro de la caja, en blanco por defecto */
+  .image-search-box p {
+    color: #ffffff;
+  }
+  
