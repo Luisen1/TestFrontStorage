@@ -133,10 +133,10 @@ const ImageUploader: React.FC = () => {
     document.body.removeChild(link);
   };
 
-  // Función para borrar la imagen del servidor
+  // Función para borrar la imagen consumiendo el endpoint correspondiente
   const handleDelete = async (image: ServerImage) => {
     try {
-      const response = await fetch(`http://localhost:3030/api/images/${image.id}`, {
+      const response = await fetch(`http://localhost:3030/api/images/id/${image.id}`, {
         method: 'DELETE',
       });
       if (!response.ok) {
