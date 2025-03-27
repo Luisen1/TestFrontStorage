@@ -32910,15 +32910,13 @@ const ImageSearchByLabel = ()=>{
         setLoading(true);
         setError(null);
         try {
-            // Construye la URL usando el query parameter tag
             const response = await fetch(`http://localhost:3030/api/images/by-label?tag=${encodeURIComponent(searchTag)}`, {
                 method: 'GET'
             });
             if (!response.ok) throw new Error("Error en la b\xfasqueda");
             const data = await response.json();
-            // Se asume que la respuesta tiene la forma:
-            // { success: true, data: { images: [...] } }
-            setResults(data.data.images);
+            // El endpoint regresa { success: true, data: [...] }
+            setResults(data.data); // <--- Aquí el cambio: usar data.data en lugar de data.data.images
         } catch (err) {
             setError(err.message || 'Error desconocido');
         } finally{

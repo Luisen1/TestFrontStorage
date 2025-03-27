@@ -5,6 +5,8 @@ interface ServerImage {
   url: string;
   size: number;
   file_name: string;
+  // labels?: Label[];
+  // bucket?: Bucket;
 }
 
 const ImageSearchByLabel: React.FC = () => {
@@ -18,7 +20,6 @@ const ImageSearchByLabel: React.FC = () => {
     setLoading(true);
     setError(null);
     try {
-      // Construye la URL usando el query parameter tag
       const response = await fetch(`http://localhost:3030/api/images/by-label?tag=${encodeURIComponent(searchTag)}`, {
         method: 'GET'
       });
@@ -26,9 +27,8 @@ const ImageSearchByLabel: React.FC = () => {
         throw new Error('Error en la búsqueda');
       }
       const data = await response.json();
-      // Se asume que la respuesta tiene la forma:
-      // { success: true, data: { images: [...] } }
-      setResults(data.data.images);
+      // El endpoint regresa { success: true, data: [...] }
+      setResults(data.data); // <--- Aquí el cambio: usar data.data en lugar de data.data.images
     } catch (err: any) {
       setError(err.message || 'Error desconocido');
     } finally {
