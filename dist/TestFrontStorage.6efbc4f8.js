@@ -18604,6 +18604,8 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _indexCss = require("./index.css"); // Estilos de Tailwind
+var _appCustomCss = require("./AppCustom.css");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
@@ -18621,20 +18623,20 @@ const Home = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: "Bienvenido a TestFrontStorage"
             }, void 0, false, {
                 fileName: "src/App.tsx",
-                lineNumber: 9,
+                lineNumber: 12,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Utiliza la navegaci\xf3n para acceder a las funcionalidades."
             }, void 0, false, {
                 fileName: "src/App.tsx",
-                lineNumber: 10,
+                lineNumber: 13,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.tsx",
-        lineNumber: 8,
+        lineNumber: 11,
         columnNumber: 3
     }, undefined);
 _c = Home;
@@ -18650,7 +18652,7 @@ const App = ()=>{
                         children: "Inicio"
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 18,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -18659,7 +18661,7 @@ const App = ()=>{
                         children: "Im\xe1genes"
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 19,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -18668,7 +18670,7 @@ const App = ()=>{
                         children: "Buscar por Etiqueta"
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 20,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -18677,13 +18679,13 @@ const App = ()=>{
                         children: "Crear Bucket"
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 21,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.tsx",
-                lineNumber: 17,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
@@ -18692,60 +18694,60 @@ const App = ()=>{
                         path: "/",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Home, {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 24,
+                            lineNumber: 27,
                             columnNumber: 34
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 24,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                         path: "/images",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imagesPageDefault.default), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 25,
+                            lineNumber: 28,
                             columnNumber: 40
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 25,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                         path: "/search",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageSearchByLabelDefault.default), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 26,
+                            lineNumber: 29,
                             columnNumber: 40
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 26,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                         path: "/create-bucket",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _createBucketDefault.default), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 27,
+                            lineNumber: 30,
                             columnNumber: 47
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 27,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.tsx",
-                lineNumber: 23,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.tsx",
-        lineNumber: 16,
+        lineNumber: 19,
         columnNumber: 5
     }, undefined);
 };
@@ -18760,7 +18762,7 @@ $RefreshReg$(_c1, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","./ImagesPage":"bghvX","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./ImageSearchByLabel":"8IbmW","./CreateBucket":"bVm2s"}],"61z4w":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","./ImagesPage":"bghvX","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./ImageSearchByLabel":"8IbmW","./CreateBucket":"bVm2s","./index.css":"irmnC","./AppCustom.css":"a0D1p"}],"61z4w":[function(require,module,exports,__globalThis) {
 /**
  * React Router DOM v6.8.1
  *
@@ -23763,6 +23765,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _imageUploader = require("./components/ImageUploader");
 var _imageUploaderDefault = parcelHelpers.interopDefault(_imageUploader);
+var _imagesPageCss = require("./ImagesPage.css");
 const ImagesPage = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
@@ -23771,18 +23774,18 @@ const ImagesPage = ()=>{
                 children: "Galer\xeda de Im\xe1genes"
             }, void 0, false, {
                 fileName: "src/ImagesPage.tsx",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageUploaderDefault.default), {}, void 0, false, {
                 fileName: "src/ImagesPage.tsx",
-                lineNumber: 8,
+                lineNumber: 9,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/ImagesPage.tsx",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 5
     }, undefined);
 };
@@ -23796,7 +23799,7 @@ $RefreshReg$(_c, "ImagesPage");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./components/ImageUploader":"7PP3x","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"7PP3x":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./components/ImageUploader":"7PP3x","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./ImagesPage.css":"cR6hB"}],"7PP3x":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$9813 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$9813.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -32907,7 +32910,7 @@ const listUploadedImages = (images)=>{
     return Array.from(new Set(images));
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8IbmW":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cR6hB":[function() {},{}],"8IbmW":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$69fe = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$69fe.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -32920,6 +32923,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _imageSearchByLabelCss = require("./ImageSearchByLabel.css");
 var _s = $RefreshSig$();
 const ImageSearchByLabel = ()=>{
     _s();
@@ -32953,7 +32957,7 @@ const ImageSearchByLabel = ()=>{
                 children: "Buscar Im\xe1genes por Etiqueta"
             }, void 0, false, {
                 fileName: "src/ImageSearchByLabel.tsx",
-                lineNumber: 41,
+                lineNumber: 42,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -32967,7 +32971,7 @@ const ImageSearchByLabel = ()=>{
                         className: "border border-gray-300 p-2 rounded flex-grow mr-2"
                     }, void 0, false, {
                         fileName: "src/ImageSearchByLabel.tsx",
-                        lineNumber: 43,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -32976,13 +32980,13 @@ const ImageSearchByLabel = ()=>{
                         children: "Buscar"
                     }, void 0, false, {
                         fileName: "src/ImageSearchByLabel.tsx",
-                        lineNumber: 50,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/ImageSearchByLabel.tsx",
-                lineNumber: 42,
+                lineNumber: 43,
                 columnNumber: 7
             }, undefined),
             loading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -32990,7 +32994,7 @@ const ImageSearchByLabel = ()=>{
                 children: "Buscando..."
             }, void 0, false, {
                 fileName: "src/ImageSearchByLabel.tsx",
-                lineNumber: 57,
+                lineNumber: 58,
                 columnNumber: 19
             }, undefined),
             error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -32998,7 +33002,7 @@ const ImageSearchByLabel = ()=>{
                 children: error
             }, void 0, false, {
                 fileName: "src/ImageSearchByLabel.tsx",
-                lineNumber: 58,
+                lineNumber: 59,
                 columnNumber: 17
             }, undefined),
             results.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33012,7 +33016,7 @@ const ImageSearchByLabel = ()=>{
                                 className: "w-full h-auto max-h-40 object-contain mb-2"
                             }, void 0, false, {
                                 fileName: "src/ImageSearchByLabel.tsx",
-                                lineNumber: 66,
+                                lineNumber: 67,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33023,7 +33027,7 @@ const ImageSearchByLabel = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/ImageSearchByLabel.tsx",
-                                lineNumber: 71,
+                                lineNumber: 72,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33034,24 +33038,24 @@ const ImageSearchByLabel = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/ImageSearchByLabel.tsx",
-                                lineNumber: 72,
+                                lineNumber: 73,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, img.id, true, {
                         fileName: "src/ImageSearchByLabel.tsx",
-                        lineNumber: 62,
+                        lineNumber: 63,
                         columnNumber: 13
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/ImageSearchByLabel.tsx",
-                lineNumber: 60,
+                lineNumber: 61,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/ImageSearchByLabel.tsx",
-        lineNumber: 40,
+        lineNumber: 41,
         columnNumber: 5
     }, undefined);
 };
@@ -33066,7 +33070,7 @@ $RefreshReg$(_c, "ImageSearchByLabel");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"bVm2s":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./ImageSearchByLabel.css":"efq4c"}],"efq4c":[function() {},{}],"bVm2s":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$68bb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$68bb.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -33079,6 +33083,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _createBucketCss = require("./CreateBucket.css");
 var _s = $RefreshSig$();
 const CreateBucket = ()=>{
     _s();
@@ -33123,7 +33128,7 @@ const CreateBucket = ()=>{
                 children: "Crear Nuevo Bucket"
             }, void 0, false, {
                 fileName: "src/CreateBucket.tsx",
-                lineNumber: 46,
+                lineNumber: 48,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33137,7 +33142,7 @@ const CreateBucket = ()=>{
                         className: "border border-gray-300 p-2 rounded"
                     }, void 0, false, {
                         fileName: "src/CreateBucket.tsx",
-                        lineNumber: 48,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -33147,7 +33152,7 @@ const CreateBucket = ()=>{
                         children: loading ? 'Creando...' : 'Crear Bucket'
                     }, void 0, false, {
                         fileName: "src/CreateBucket.tsx",
-                        lineNumber: 55,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, undefined),
                     successMessage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33155,7 +33160,7 @@ const CreateBucket = ()=>{
                         children: successMessage
                     }, void 0, false, {
                         fileName: "src/CreateBucket.tsx",
-                        lineNumber: 64,
+                        lineNumber: 66,
                         columnNumber: 11
                     }, undefined),
                     errorMessage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33163,19 +33168,19 @@ const CreateBucket = ()=>{
                         children: errorMessage
                     }, void 0, false, {
                         fileName: "src/CreateBucket.tsx",
-                        lineNumber: 67,
+                        lineNumber: 69,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/CreateBucket.tsx",
-                lineNumber: 47,
+                lineNumber: 49,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/CreateBucket.tsx",
-        lineNumber: 45,
+        lineNumber: 47,
         columnNumber: 5
     }, undefined);
 };
@@ -33190,6 +33195,6 @@ $RefreshReg$(_c, "CreateBucket");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["eYRZT","4dmnR"], "4dmnR", "parcelRequire1fdc", null, null, "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./CreateBucket.css":"7xAM0"}],"7xAM0":[function() {},{}],"irmnC":[function() {},{}],"a0D1p":[function() {},{}]},["eYRZT","4dmnR"], "4dmnR", "parcelRequire1fdc", null, null, "http://localhost:1234")
 
 //# sourceMappingURL=TestFrontStorage.6efbc4f8.js.map

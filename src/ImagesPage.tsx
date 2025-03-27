@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageUploader from './components/ImageUploader';
+import './ImagesPage.css';
 
 const ImagesPage: React.FC = () => {
   return (

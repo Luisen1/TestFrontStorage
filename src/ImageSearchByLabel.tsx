@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ImageSearchByLabel.css';
 
 interface ServerImage {
   id: number;

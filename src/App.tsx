@@ -1,3 +1,6 @@
+import './index.css';       // Estilos de Tailwind
+import './AppCustom.css';
+
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import ImagesPage from './ImagesPage';

@@ -1,4 +1,6 @@
+
 import React, { useState } from 'react';
+import './CreateBucket.css';
 
 const CreateBucket: React.FC = () => {
   const [bucketName, setBucketName] = useState('');

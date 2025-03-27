@@ -1,0 +1,21 @@
+/* ImagesPage.css */
+
+/* Contenedor general: fondo gris oscuro, ocupa al menos el alto de la pantalla y con padding en la parte superior */
+.images-page-container {
+  background-color: #1f2937; /* Gris oscuro similar a bg-gray-800 */
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+/* Caja que centra el contenido horizontalmente y le da un ancho máximo */
+.images-page-box {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Título de la página en blanco y centrado */
+.images-page-title {
+  color: #ffffff;
+  text-align: center;
+  margin: 1rem 0;
+}

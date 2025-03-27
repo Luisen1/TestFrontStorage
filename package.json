@@ -18,6 +18,7 @@
     "testfrontstorage": "file:"
   },
   "devDependencies": {
+    "@types/react-dom": "^19.0.4",
     "parcel": "^2.9.3",
     "typescript": "^5.8.2"
   }
